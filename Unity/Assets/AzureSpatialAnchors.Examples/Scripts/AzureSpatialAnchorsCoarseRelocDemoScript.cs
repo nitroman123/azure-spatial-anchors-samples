@@ -222,6 +222,9 @@ namespace Microsoft.Azure.SpatialAnchors.Unity.Examples
             enableAdvancingOnSelect = false;
 
             EnableCorrectUIControls();
+
+
+            Screen.sleepTimeout = SleepTimeout.NeverSleep;
         }
 
         protected override void OnCloudAnchorLocated(AnchorLocatedEventArgs args)

@@ -173,20 +173,14 @@ MonoBehaviour:
   m_Name: Standalone
   m_EditorClassIdentifier: 
   features:
-  - {fileID: -2564206852389926046}
   - {fileID: -1377395592613575803}
   - {fileID: 8430145000980021589}
-  - {fileID: -4776366535787035942}
-  - {fileID: -2242389548171523478}
   - {fileID: -5858480326358153855}
   - {fileID: 8093690727367183578}
   - {fileID: -6699377926652316741}
   - {fileID: -3879515097678534376}
-  - {fileID: -3543066375999799484}
   - {fileID: 8356675761441639324}
-  - {fileID: -4616299017211565138}
   - {fileID: 1528424147872171815}
-  - {fileID: -4416125617859764834}
   - {fileID: -1015284287635471886}
   - {fileID: -8304700469656720525}
   m_renderMode: 1
@@ -473,11 +467,10 @@ MonoBehaviour:
   features:
   - {fileID: 2027142196930552335}
   - {fileID: 2820720562266312692}
-  - {fileID: 2036477492253286169}
   - {fileID: 3494858765654431097}
+  - {fileID: 7472612905451985076}
   - {fileID: -1816432887675791699}
   - {fileID: -2741203338579815790}
-  - {fileID: 3045749281132289840}
   - {fileID: -1554070522237946421}
   - {fileID: 3325429968539808219}
   - {fileID: 2966886650924807863}
@@ -644,11 +637,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f0ebc320a151d3408ea1e9fce54d40e, type: 3}
   m_Name: Open XR Package Settings
   m_EditorClassIdentifier: 
-  Keys: 01000000070000000e000000
+  Keys: 01000000070000000e000000040000000d000000
   Values:
   - {fileID: -4883143044177115704}
   - {fileID: -2029806181128609704}
   - {fileID: 2700509849669118628}
+  - {fileID: 8770738706736051586}
+  - {fileID: 7463224099568974642}
 --- !u!114 &1528424147872171815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -727,17 +722,12 @@ MonoBehaviour:
   m_Name: WSA
   m_EditorClassIdentifier: 
   features:
-  - {fileID: -5070602203000468258}
   - {fileID: 5897056910431841954}
   - {fileID: 6446237421306088475}
-  - {fileID: -703843199750618364}
-  - {fileID: -1549474869206798473}
   - {fileID: 4206013320068029729}
   - {fileID: -4228539016835274580}
   - {fileID: 5121498239102441293}
   - {fileID: 5899692083449650982}
-  - {fileID: -4353146711934554799}
-  - {fileID: -5030671338075289746}
   - {fileID: -6362632429819845058}
   - {fileID: -2119922552256626466}
   - {fileID: -1970296840116294154}
@@ -1067,6 +1057,51 @@ MonoBehaviour:
   company: Unity
   priority: 0
   required: 0
+--- !u!114 &7463224099568974642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5a1f07dc5afe854f9f12a4194aca3fb, type: 3}
+  m_Name: WebGL
+  m_EditorClassIdentifier: 
+  features: []
+  m_renderMode: 1
+  m_depthSubmissionMode: 0
+--- !u!114 &7472612905451985076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f647cc0545697264a9878224faada6d5, type: 3}
+  m_Name: MetaQuestFeature Android
+  m_EditorClassIdentifier: 
+  m_enabled: 0
+  nameUi: Meta Quest Support
+  version: 1.0.0
+  featureIdInternal: com.unity.openxr.feature.metaquest
+  openxrExtensionStrings: XR_OCULUS_android_initialize_loader
+  company: Unity
+  priority: 0
+  required: 0
+  targetDevices:
+  - visibleName: Quest
+    manifestName: quest
+    enabled: 1
+  - visibleName: Quest 2
+    manifestName: quest2
+    enabled: 1
+  - visibleName: Quest Pro
+    manifestName: cambria
+    enabled: 1
 --- !u!114 &8093690727367183578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1128,3 +1163,18 @@ MonoBehaviour:
   company: Unity
   priority: 0
   required: 0
+--- !u!114 &8770738706736051586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5a1f07dc5afe854f9f12a4194aca3fb, type: 3}
+  m_Name: iPhone
+  m_EditorClassIdentifier: 
+  features: []
+  m_renderMode: 1
+  m_depthSubmissionMode: 0
